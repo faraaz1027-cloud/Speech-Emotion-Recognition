@@ -7,7 +7,9 @@ feature explorer** and a separate, untrained pipeline for later reproduction.
 
 ## Interactive portfolio demo
 
-**Demo deployment:** Not published yet — no live URL is claimed here.
+**[Launch interactive audio-feature demo](https://speech-emotion-recognition-fkappby7ugbjxfb9tcqvbyn.streamlit.app/)** · [GitHub Actions checks](https://github.com/faraaz1027-cloud/Speech-Emotion-Recognition/actions)
+
+The owner has shown that the Streamlit interface loads successfully; GitHub Actions audio-feature smoke tests have passed. The uploaded-WAV visualization and CSV download should be manually checked before treating the interactive workflow as fully verified.
 
 Try the Streamlit audio feature explorer after deploying `demo/app.py`.
 It accepts short WAV recordings, shows a waveform and MFCC heatmap, and
