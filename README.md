@@ -54,6 +54,7 @@ Original collaborative university project:
 - [Original team Jupyter notebook](https://github.com/waysal1/Speech-Emotion-Recognition/blob/main/CSE424_SER_Project_Code.ipynb)
 - [Original team PDF report](https://github.com/waysal1/Speech-Emotion-Recognition/blob/main/CSE424%20Project%20Report.pdf)
 - [Dataset preparation notes](notebooks/README.md)
+- [New local audio-feature quickstart notebook](notebooks/audio_feature_quickstart.ipynb) (does not replace the original research notebook)
 
 The original authors and team contributors retain credit. This portfolio
 copy does not imply that Faraaz was the sole author of the coursework.
