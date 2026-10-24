@@ -1,6 +1,14 @@
-.ipynb_checkpoints/
+# Do not commit datasets, speech recordings, caches, generated models or env files.
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
 .env
-.DS_Store
-.vscode/
+.env.*
+!.env.example
+data/
+*.wav
+*.mp3
+*.flac
+*.ogg
+models/*.joblib
+models/*.metrics.json
