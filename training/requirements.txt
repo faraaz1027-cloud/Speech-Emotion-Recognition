@@ -1,0 +1,4 @@
+# Training only. Demo does not need scikit-learn until a model is deployed.
+-r ../demo/requirements.txt
+scikit-learn==1.8.0
+joblib==1.5.3
