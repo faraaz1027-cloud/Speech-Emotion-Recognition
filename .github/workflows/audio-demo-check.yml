@@ -1,0 +1,32 @@
+name: Validate Bangla SER feature demo
+
+on:
+  push:
+    branches:
+      - portfolio-audio-demo
+  pull_request:
+    paths:
+      - 'demo/**'
+      - 'training/**'
+      - 'tests/**'
+      - '.github/workflows/audio-demo-check.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: demo/requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r demo/requirements.txt
+          pip install scikit-learn==1.8.0 joblib==1.5.3
+      - name: Verify Python syntax
+        run: python -m compileall -q demo training tests
+      - name: Exercise synthetic audio tests
+        run: python -m unittest discover -s tests -v
